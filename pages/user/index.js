@@ -17,12 +17,18 @@ Page({
   onShow: function () {
     const userInfo = wx.getStorageSync('userInfo');
     if (!userInfo.nickName) {
-      wx.navigateTo({
-        url: '/pages/login/index',
-      });
     } else {
       this.setData({
         userInfo,
+      });
+    }
+  },
+  handleUserIconTap: function (e) {
+    console.log(e);
+    const userInfo = wx.getStorageSync('userInfo');
+    if (!userInfo.nickName) {
+      wx.navigateTo({
+        url: '/pages/login/index',
       });
     }
   },

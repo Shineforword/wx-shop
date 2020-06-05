@@ -6,6 +6,7 @@ page {
 /* 收货地址 */
 .recive_address_row {
   background: #ffffff;
+  border-bottom: solid 1rpx #f5f5f5;
 }
 .address_btn button {
   width: 60%;
@@ -34,15 +35,6 @@ page {
 }
 /* 商品项 */
 .cart_content {
-}
-.cart_title {
-  padding: 20rpx;
-  font-size: 36rpx;
-  color: var(--themeColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1rpx solid #f5f5f5;
 }
 .cart_main {
   padding: 20rpx 0;

@@ -67,6 +67,8 @@ page {
   top: -40rpx;
   width: 90%;
   left: calc(100vw * 0.05);
+  /* 滑动距离 */
+  padding-bottom: 100rpx;
 }
 .history_wrap {
   background: #ffffff;

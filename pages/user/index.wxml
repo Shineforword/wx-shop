@@ -1,13 +1,13 @@
 <!-- 头像昵称 -->
 <view class="user_wrap">
   <view class="user_bg_wrap">
-    <image class="user_bg" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
-    <view class="user_icon_wrap">
-      <image class="user_info_icon" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+    <image class="user_bg" src="{{userInfo.avatarUrl?userInfo.avatarUrl:''}}" mode="scaleToFill"></image>
+    <view class="user_icon_wrap" bindtap="handleUserIconTap">
+      <image class="user_info_icon" mode="aspectFit" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'https://pic4.zhimg.com/v2-29650a2de5543135da189ab250d79b8d_1200x500.jpg'}}"></image>
     </view>
     <view class="user_info_wrap">
-      <view class="user_info_name">{{userInfo.nickName}}</view>
-      <view class="user_info_nation">{{userInfo.country+userInfo.city}}</view>
+      <view class="user_info_name">{{userInfo.nickName?userInfo.nickName:'昵称'}}</view>
+      <view class="user_info_nation">{{userInfo.country?userInfo.country+userInfo.city:'颍川'}}</view>
     </view>
   </view>
 </view>
