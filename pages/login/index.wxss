@@ -1,1 +1,8 @@
 /* pages/login/index.wxss */
+
+.login_btn_wrap {
+  margin-top: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

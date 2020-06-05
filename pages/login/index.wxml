@@ -1,2 +1,5 @@
-<!--pages/login/index.wxml-->
-<text>pages/login/index.wxml</text>
+<view class="login_btn_wrap">
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" plain="{{true}}">
+    登录
+  </button>
+</view>

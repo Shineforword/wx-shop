@@ -1,2 +1,82 @@
-<!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<!-- 头像昵称 -->
+<view class="user_wrap">
+  <view class="user_bg_wrap">
+    <image class="user_bg" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
+    <view class="user_icon_wrap">
+      <image class="user_info_icon" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="user_info_wrap">
+      <view class="user_info_name">{{userInfo.nickName}}</view>
+      <view class="user_info_nation">{{userInfo.country+userInfo.city}}</view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="user_content">
+  <view class="user_main">
+    <!-- 历史足迹 -->
+    <view class="history_wrap">
+      <navigator>
+        <view class="history_num">5</view>
+        <view class="history_name">收藏店铺</view>
+      </navigator>
+      <navigator>
+        <view class="history_num">2</view>
+        <view class="history_name">收藏商品</view>
+      </navigator>
+      <navigator>
+        <view class="history_num">0</view>
+        <view class="history_name">关注店铺</view>
+      </navigator>
+      <navigator>
+        <view class="history_num">1</view>
+        <view class="history_name">我的足迹</view>
+      </navigator>
+    </view>
+    <!-- 我的订单 -->
+    <view class="orders_wrap">
+      <view class="orders_title_wrap">
+        <view class="order_title">我的订单</view>
+      </view>
+      <view class="orders_content">
+        <navigator>
+          <text class="iconfont icon-dingdan"></text>
+          <view class="order_name">全部订单</view>
+        </navigator>
+        <navigator>
+          <text class="iconfont icon-icon5"></text>
+          <view class="order_name">待付款</view>
+        </navigator>
+        <navigator>
+          <text class="iconfont icon-daishouhuo"></text>
+          <view class="order_name">待收货</view>
+        </navigator>
+        <navigator>
+          <text class="iconfont icon-shangpinwuliutuihuotuihuishangpin"></text>
+          <view class="order_name">退货/退款</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 地址管理 -->
+    <view class="address_manager_wrap">
+      <text class="address_manager_des">收货地址管理</text>
+    </view>
+    <!-- 客服意见关于 -->
+    <view class="service_wrap">
+      <navigator class="service_item">
+        <view class="service_tel">客服电话</view>
+        <text class="tel">20205201314</text>
+      </navigator>
+      <navigator class="service_item">
+        <view class="service_feedback">意见反馈</view>
+      </navigator>
+      <navigator class="service_item">
+        <view class="service_aboutUs">关于我们</view>
+      </navigator>
+    </view>
+    <!-- 推荐 -->
+    <view class="user_share_wrap">
+      <text class="address_manager_des">推荐给好友</text>
+    </view>
+  </view>
+</view>
