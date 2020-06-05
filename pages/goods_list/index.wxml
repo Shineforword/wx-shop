@@ -1,0 +1,33 @@
+<!--pages/goods_list/index.wxml-->
+<view>
+	<SearchInput></SearchInput>
+	<!-- 监听自定义事件(关键字:bind+子组件事件名) -->
+	<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  	<block wx:if="{{tabs[0].isActive}}">
+		<view class="first_tab">
+			<navigator 
+      wx:for="{{goods_list}}" 
+      wx:key="key"
+      url="/pages/goods_detail/index?title={{index}}"
+      class="goods_item">
+				<!-- 左侧图 -->
+				<view class="goods_img_wrap">
+					<image mode="widthFix" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/896d989bcdae584906c36f4a4e5fa89b.jpg?thumb=1&w=344&h=280"></image>
+				</view>
+				<!-- 右侧文 -->
+				<view class="goods_info_wrap">
+					<view class="goods_name">小米电视4A 65英寸 小米电视4A 65英寸小米电视4A 65英寸小米电视4A 65英寸小米电视4A 65英寸小米电视4A 65英寸小米电视4A 65英寸小米电视4A 65英寸</view>
+					<view class="goods_price">¥ 3999</view>
+				</view>
+			</navigator>
+		</view>
+	</block>
+	<block wx:elif="{{tabs[1].isActive}}">2
+		<view class="second_tab"></view>
+	</block>
+	<block wx:elif="{{tabs[2].isActive}}">3
+		<view class="third_tab"></view>
+	</block>
+  </Tabs>
+
+</view>

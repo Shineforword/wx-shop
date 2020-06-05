@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "Shop",
+    "navigationBarTextStyle":"white"
+    },
+    "tabBar": {
+      "color":"#999",
+      "backgroundColor":"#fafafa",
+      "selectedColor":"#ff2d4a",
+      "position":"bottom",
+      "borderStyle":"black",
+      "list": [
+        {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "icons/home_unselected.png",
+        "selectedIconPath": "icons/home_selected.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "Catrgory",
+        "iconPath": "icons/category_unselected.png",
+        "selectedIconPath": "icons/category_selected.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "Cart",
+        "iconPath": "icons/messages_unselected.png",
+        "selectedIconPath": "icons/messages_selected.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "User",
+        "iconPath": "icons/account_unselected.png",
+        "selectedIconPath": "icons/account_selected.png"
+      }
+    ]
+
+
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
